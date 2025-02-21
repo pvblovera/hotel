@@ -1,0 +1,80 @@
+:root {
+    --primary-color: #141212;
+    --secondary-color: #E9D6CE;
+    --tertiary-color: #FF7948;
+    --white-color: #fff;
+    --black-color: #000;
+}
+
+.hero-section {
+    background-image: url('assets/images/portada.jpg');
+    background-size: cover;
+    background-position: bottom;
+    color: var(--white-color);
+    height: 70vh;
+    position: relative;
+}
+
+.overlay-hero {
+    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.container-text {
+    height: 100%;
+    position: relative;
+}
+
+.hero-text {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+    padding: 0 60px 30px 20px;
+}
+
+.hero-text h1 {
+    font-size: 1.9rem;
+}
+
+.btn-primary {
+    background-color: var(--tertiary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+}
+
+@media screen and (min-width: 768px) {
+    .hero-text h1{
+        font-size: 5rem;
+    }
+}
+
+.background-menu {
+    background-color: var(--primary-color);
+}
+
+.background-menu a{
+    color: var(--white-color);
+}
+
+.custom-toggler {
+    border: none;
+    background: transparent;
+    font-size: 24px;
+    color: white; /* Color blanco para el icono */
+}
+
+.custom-toggler:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.navbar-toggler-icon {
+    all:unset;
+}
