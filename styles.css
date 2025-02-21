@@ -1,10 +1,98 @@
 :root {
     --primary-color: #141212;
-    --secondary-color: #E9D6CE;
+    --secondary-color: #edded2;
     --tertiary-color: #FF7948;
     --white-color: #fff;
     --black-color: #000;
 }
+
+/* ESTILOS GENERALES */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+
+h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 2.0rem;
+    font-weight: 700;
+}
+
+h3 {
+    font-size: 1.7rem;
+    font-weight: 700;
+}
+
+h4 {
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+h5 {
+    font-size: 0.9rem;
+    font-weight: 700;
+}
+
+h6 {
+    font-size: 0.7rem;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+a {
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+@media screen and (min-width: 768px) {
+    h1 {
+        font-size: 5.5rem;
+    }
+
+    h2 {
+        font-size: 2.5rem;
+    }
+
+    h3 {
+        font-size: 2rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    h5 {
+        font-size: 1.2rem;
+    }
+
+    h6 {
+        font-size: 1rem;
+    }
+
+    p {
+        font-size: 1.4rem;
+    }
+
+    a {
+        font-size: 1.4rem;
+    }
+}
+
+
+/* ESTILOS GENERALES */
+
+/* INICIO ESTILOS HERO */
 
 .hero-section {
     background-image: url('assets/images/portada.jpg');
@@ -36,38 +124,24 @@
     padding: 0 60px 30px 20px;
 }
 
-.hero-text h1 {
-    font-size: 1.9rem;
-}
+/* FINAL ESTILOS HERO */
 
-.btn-primary {
-    background-color: var(--tertiary-color);
-}
-
-.btn-primary:hover {
-    background-color: var(--secondary-color);
-    color: var(--primary-color);
-}
-
-@media screen and (min-width: 768px) {
-    .hero-text h1{
-        font-size: 5rem;
-    }
-}
+/* INICIO ESTILOS DE MENÚ */
 
 .background-menu {
-    background-color: var(--primary-color);
+    background-color:var(--secondary-color);
 }
 
 .background-menu a{
-    color: var(--white-color);
+    color: var(--primary-color);
+    font-size: 1.4rem;
 }
 
 .custom-toggler {
     border: none;
     background: transparent;
     font-size: 24px;
-    color: white; /* Color blanco para el icono */
+    color: var(--primary-color); /* Color blanco para el icono */
 }
 
 .custom-toggler:focus {
@@ -75,6 +149,30 @@
     box-shadow: none;
 }
 
-.navbar-toggler-icon {
-    all:unset;
+/* FINAL ESTILOS DE MENÚ */
+
+/* INICIO CARACTERISTICAS */
+
+.features-section {
+    background-color: var(--secondary-color);
+    padding: 50px 0;
 }
+
+.features-section h2 {
+    color: var(--primary-color);
+}
+
+.features-section h3 {
+    margin: 1.5rem 0;
+    text-align: center;
+}
+
+.features-section .feature i {
+    font-size: 5rem;
+    color: var(--tertiary-color);
+}
+
+.features-section .feature {
+    margin-bottom: 3rem;
+}
+/* FINAL CARACTERISTICAS */
