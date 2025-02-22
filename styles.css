@@ -90,46 +90,12 @@ a {
 }
 
 
-/* ESTILOS GENERALES */
-
-/* INICIO ESTILOS HERO */
-
-.hero-section {
-    background-image: url('assets/images/portada.jpg');
-    background-size: cover;
-    background-position: bottom;
-    color: var(--white-color);
-    height: 70vh;
-    position: relative;
-}
-
-.overlay-hero {
-    background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5));
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-}
-
-.container-text {
-    height: 100%;
-    position: relative;
-}
-
-.hero-text {
-    position: absolute;
-    left: 0%;
-    bottom: 0%;
-    padding: 0 60px 30px 20px;
-}
-
-/* FINAL ESTILOS HERO */
+/* FIN ESTILOS GENERALES */
 
 /* INICIO ESTILOS DE MENÚ */
 
 .background-menu {
-    background-color:var(--secondary-color);
+    background-color:var(--tertiary-color);
 }
 
 .background-menu a{
@@ -150,6 +116,48 @@ a {
 }
 
 /* FINAL ESTILOS DE MENÚ */
+
+/* INICIO ESTILOS CARRUSEL */
+
+.carousel-container {
+    height: 80vh;
+    position: relative;
+}
+
+.carousel img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.image-custom {
+    position: relative;
+}
+
+.overlay-image {
+    background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9));
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-item {
+    height: 100%;
+}
+
+.carousel-img {
+    height: 100%;
+    object-fit: cover;
+}
+
+/* FINAL ESTILOS CARRUSEL */
+
 
 /* INICIO CARACTERISTICAS */
 
