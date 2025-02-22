@@ -17,7 +17,7 @@
     <header class="background-menu sticky-top">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand fs-1" href="index.html">Empresa</a>
+                <a class="navbar-brand fw-bold fs-1" href="index.html">LOGO</a>
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -39,6 +39,11 @@
             </nav>
         </div>
     </header>
+
+    <a class="d-flex wsp-button flex-column align-items-center" href="#">
+        <i class="fa-brands fa-whatsapp"></i>
+        <p class="wsp-text">Contactar por Whatsapp</p>
+    </a>
 
     <div id="carouselExampleCaptions" class="carousel slide carousel-container">
         <div class="carousel-indicators">
@@ -87,29 +92,38 @@
         </button>
     </div>
 
-
-
-
-
-
-
-
-
-    <!-- <section class="hero-section">
-            <div class="overlay-hero">
-                <div class="container container-text">
-                    <div class="hero-text">
-                        <h1 class="">Título con mayor relevancia</h1>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit vel accusamus dolor eum culpa
-                            reprehenderit!</p>
-                        <a class="btn btn-primary fs-5 border-0" href="#">Ver Servicios</a>
-                    </div>
-                </div>
+    <main class="container py-5 services-tabs">
+        <h2 class="fw-bold text-center">Nuestros Servicios</h2>
+        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
+        <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
+                    type="button" role="tab" aria-controls="pills-home" aria-selected="true">Habitaciones</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
+                    type="button" role="tab" aria-controls="pills-profile" aria-selected="false">Comida</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="pills-contact-tab" data-bs-toggle="pill" data-bs-target="#pills-contact"
+                    type="button" role="tab" aria-controls="pills-contact" aria-selected="false">Movilización</button>
+            </li>
+        </ul>
+        <div class="tab-content" id="pills-tabContent">
+            <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
+                tabindex="0">
+                <h3>Simple</h3>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam rem expedita, eos aspernatur soluta
+                voluptate explicabo laborum, at repellat nam nobis voluptatibus ex, dolor molestiae.
             </div>
-        </section> -->
-
-    <main>
-
+            <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
+                tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque suscipit, quas aliquid
+                eum voluptatem tenetur non accusamus eveniet consequatur impedit nisi dolore, accusantium nemo, aperiam
+                sequi! Aut laudantium porro ipsam esse vel! Dolore distinctio cum praesentium, mollitia nisi, nam fuga
+                earum vel molestiae voluptas possimus veritatis corrupti vero sunt?</div>
+            <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
+                tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, perferendis?</div>
+        </div>
     </main>
 
     <section class="py-4 text-center features-section">
@@ -150,6 +164,31 @@
             </div>
         </div>
         </div>
+    </section>
+
+    <section class="mapView py-5">
+        <div class="container">
+            <h2>Nuestra ubicación</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem provident tempora modi minima suscipit
+                amet?</p>
+        </div>
+        <div class="container container-contact  d-flex flex-column flex-md-row justify-content-between p-3">
+            <div class="phoneNumber mb-4 d-flex align-items-center">
+                <i class="fa-solid fa-phone fs-4 me-3"></i>
+                <p class="m-0">+56 9 0986 5431</p>
+            </div>
+            <div class="locationName mb-4 d-flex align-items-center">
+                
+                <i class="fa-solid fa-location-dot fs-4 me-3"></i>
+                <p class="m-0">Calle 1, Hotel 1.</p>
+            </div>
+            <div class="mailContact mb-4 d-flex align-items-center">
+                <i class="fa-solid fa-envelope fs-4 me-3"></i>
+                <p class="m-0">contacto@hotel.cl</p>
+            </div>
+        </div>
+        <iframe class="w-100" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10701.217869197411!2d-68.92304129421753!3d-22.44817963422777!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x96ac09c637b8bb5f%3A0xa5c7103a304f3d87!2sMallplaza%20Calama!5e0!3m2!1ses-419!2scl!4v1740195410351!5m2!1ses-419!2scl" style="border:0;" allowfullscreen="" height="500px" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
     </section>
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
