@@ -4,8 +4,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#FF7948" media="(prefers-color-scheme: light)">
-    <!-- <meta name="theme-color" content="#074500" media="(prefers-color-scheme: dark)"> -->
+    <meta name="theme-color" content="#284b63" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#284b63" media="(prefers-color-scheme: dark)">
     <title>Page</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
@@ -28,10 +28,10 @@
                             <a class="nav-link" aria-current="page" href="index.html">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="servicios.html">Servicios</a>
+                            <a class="nav-link" href="#services">Servicios</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contacto.html">Contacto</a>
+                            <a class="nav-link" href="#map">Contacto</a>
                         </li>
                     </ul>
                 </div>
@@ -90,10 +90,10 @@
         </button>
     </div>
 
-    <main class="container py-5 services-tabs">
-        <h2 class="fw-bold text-center">Nuestros Servicios</h2>
-        <p class="text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
-        <ul class="nav nav-pills mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
+    <main id="services" class="container py-5 services-tabs">
+        <h2 class="fw-bold text-center mt-5">Nuestros Servicios</h2>
+        <p class="text-center mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
+        <ul class="nav nav-pills mt-5 mb-3 d-flex justify-content-center" id="pills-tab" role="tablist">
             <li class="nav-item" role="presentation">
                 <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
                     type="button" role="tab" aria-controls="pills-home" aria-selected="true">Habitaciones</button>
@@ -164,7 +164,7 @@
         </div>
     </section>
 
-    <section class="mapView container py-5">
+    <section id="map" class="mapView container py-5">
         <div class="container">
             <h2>Nuestra ubicación</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem provident tempora modi minima suscipit

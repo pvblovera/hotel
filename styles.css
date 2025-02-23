@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #141212;
+    --primary-color: #3c6e71;
     --secondary-color: #F2F2F2;
-    --tertiary-color: #cb997e;
+    --tertiary-color: #284b63;
     --white-color: #fff;
     --black-color: #000;
 }
@@ -100,7 +100,7 @@ a {
 }
 
 .background-menu a{
-    color: var(--primary-color);
+    color: var(--white-color);
     font-size: 1.4rem;
 }
 
@@ -108,7 +108,7 @@ a {
     border: none;
     background: transparent;
     font-size: 3rem;
-    color: var(--primary-color); /* Color blanco para el icono */
+    color: var(--white-color); /* Color blanco para el icono */
 }
 
 .custom-toggler:focus {
