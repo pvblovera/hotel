@@ -217,6 +217,14 @@ a {
 } 
 /* FINAL TABS */
 
+/* INICIO ESTILOS CONTACTO */
+
+.container-contact i {
+    color: var(--primary-color);
+} 
+
+/* FINAL ESTILOS CONTACTO */
+
 /* ESTILOS DE BOTÓN WHATSAPP */
 .wsp-button {
     position: fixed;
