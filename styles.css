@@ -1,6 +1,6 @@
 :root {
     --primary-color: #141212;
-    --secondary-color: #edded2;
+    --secondary-color: #F2F2F2;
     --tertiary-color: #FF7948;
     --white-color: #fff;
     --black-color: #000;
@@ -95,12 +95,12 @@ a {
 /* INICIO ESTILOS DE MENÚ */
 
 .background-menu {
-    background-color:var(--primary-color);
+    background-color:var(--tertiary-color);
     padding: 1rem 0;
 }
 
 .background-menu a{
-    color: var(--white-color);
+    color: var(--primary-color);
     font-size: 1.4rem;
 }
 
@@ -108,7 +108,7 @@ a {
     border: none;
     background: transparent;
     font-size: 3rem;
-    color: var(--white-color); /* Color blanco para el icono */
+    color: var(--primary-color); /* Color blanco para el icono */
 }
 
 .custom-toggler:focus {
@@ -217,6 +217,7 @@ a {
 } 
 /* FINAL TABS */
 
+/* ESTILOS DE BOTÓN WHATSAPP */
 .wsp-button {
     position: fixed;
     bottom: 20px;
@@ -231,18 +232,19 @@ a {
     transition: ease-in-out all 0.3s;
 }
 
-.wsp-text {
-    display: none;
-}
-
-wsp-button:hover .wsp-text {
-    display: block;
-}
-
 .wsp-button:hover {
     background-color: darkgreen;
     cursor: pointer;
-    padding: 2rem 5rem;
+    padding: 1rem 3rem;
     transition: ease-in-out all 0.3s;
     border-radius: 1rem;
 }
+/* ESTILOS DE BOTÓN WHATSAPP */
+
+/* INICIO ESTILOS FOOTER  */
+
+footer li {
+    font-size: 1.6rem;
+}
+
+/* INICIO ESTILOS FOOTER  */
