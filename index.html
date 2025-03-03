@@ -10,6 +10,8 @@
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="styles.css">
     <link rel="stylesheet" href="assets/fontawesome/fontawesome/css/all.min.css">
+    <!-- PhotoSwipe CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.css">
 </head>
 
 <body>
@@ -279,10 +281,32 @@
         </div>
     </main>
 
-    <section class="gallery-section">
+    <section class="gallery-section py-5">
         <div class="container">
-            <h2>Conoce Nuestros Espacios</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam, voluptatem.</p>
+            <h2 class="text-center mb-4">Conoce Nuestros Espacios</h2>
+            <p class="text-center mb-4">Explora nuestra galería y descubre cada rincón.</p>
+            <div id="gallery" class="row g-3">
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/1200/800?random=1" data-pswp-width="1200" data-pswp-height="800">
+                        <img src="https://picsum.photos/300/200?random=1" class="img-fluid rounded" alt="Espacio 1">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/1200/800?random=2" data-pswp-width="1200" data-pswp-height="800">
+                        <img src="https://picsum.photos/300/200?random=2" class="img-fluid rounded" alt="Espacio 2">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/1200/800?random=3" data-pswp-width="1200" data-pswp-height="800">
+                        <img src="https://picsum.photos/300/200?random=3" class="img-fluid rounded" alt="Espacio 3">
+                    </a>
+                </div>
+                <div class="col-6 col-md-4 col-lg-3">
+                    <a href="https://picsum.photos/1200/800?random=4" data-pswp-width="1200" data-pswp-height="800">
+                        <img src="https://picsum.photos/300/200?random=4" class="img-fluid rounded" alt="Espacio 4">
+                    </a>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -376,6 +400,18 @@
         </div>
         <p class="text-center mt-5 pt-5 border-top">© Todos los derechos reservados.</p>
     </footer>
+    <!-- PhotoSwipe JS -->
+    <script type="module">
+        import PhotoSwipeLightbox from 'https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe-lightbox.esm.js';
+
+        const lightbox = new PhotoSwipeLightbox({
+            gallery: '#gallery',
+            children: 'a',
+            pswpModule: () => import('https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.esm.js')
+        });
+
+        lightbox.init();
+    </script>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 </body>
