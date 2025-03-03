@@ -15,7 +15,7 @@
 </head>
 
 <body>
-    <header class="background-menu sticky-top">
+    <header class="background-menu sticky-top shadow">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
                 <a class="navbar-brand fw-bold fs-1" href="index.html">LOGO</a>
@@ -281,30 +281,46 @@
         </div>
     </main>
 
-    <section class="gallery-section py-5">
+    <section class="gallery-section">
         <div class="container">
             <h2 class="text-center mb-4">Conoce Nuestros Espacios</h2>
             <p class="text-center mb-4">Explora nuestra galería y descubre cada rincón.</p>
-            <div id="gallery" class="row g-3">
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="https://picsum.photos/1200/800?random=1" data-pswp-width="1200" data-pswp-height="800">
-                        <img src="https://picsum.photos/300/200?random=1" class="img-fluid rounded" alt="Espacio 1">
+
+            <div id="gallery" class="row g-2 align-items-stretch">
+                <!-- Imagen grande a la izquierda -->
+                <div class="col-md-6">
+                    <a href="assets/images/image5.png" data-pswp-width="1200" data-pswp-height="1800"
+                        class="gallery-item">
+                        <img src="assets/images/image5.png" class="gallery-img large" alt="Espacio principal">
                     </a>
                 </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="https://picsum.photos/1200/800?random=2" data-pswp-width="1200" data-pswp-height="800">
-                        <img src="https://picsum.photos/300/200?random=2" class="img-fluid rounded" alt="Espacio 2">
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="https://picsum.photos/1200/800?random=3" data-pswp-width="1200" data-pswp-height="800">
-                        <img src="https://picsum.photos/300/200?random=3" class="img-fluid rounded" alt="Espacio 3">
-                    </a>
-                </div>
-                <div class="col-6 col-md-4 col-lg-3">
-                    <a href="https://picsum.photos/1200/800?random=4" data-pswp-width="1200" data-pswp-height="800">
-                        <img src="https://picsum.photos/300/200?random=4" class="img-fluid rounded" alt="Espacio 4">
-                    </a>
+
+                <!-- Cuatro imágenes pequeñas a la derecha -->
+                <div class="col-md-6 d-flex flex-wrap">
+                    <div class="col-6 p-1">
+                        <a href="assets/images/image7.png" data-pswp-width="1200" data-pswp-height="800"
+                            class="gallery-item">
+                            <img src="assets/images/image7.png" class="gallery-img small" alt="Espacio 2">
+                        </a>
+                    </div>
+                    <div class="col-6 p-1">
+                        <a href="assets/images/image3.png" data-pswp-width="1200" data-pswp-height="800"
+                            class="gallery-item">
+                            <img src="assets/images/image3.png" class="gallery-img small" alt="Espacio 3">
+                        </a>
+                    </div>
+                    <div class="col-6 p-1">
+                        <a href="assets/images/image6.png" data-pswp-width="1200" data-pswp-height="800"
+                            class="gallery-item">
+                            <img src="assets/images/image6.png" class="gallery-img small" alt="Espacio 4">
+                        </a>
+                    </div>
+                    <div class="col-6 p-1">
+                        <a href="assets/images/imagen1.png" data-pswp-width="1200" data-pswp-height="800"
+                            class="gallery-item">
+                            <img src="assets/images/imagen1.png" class="gallery-img small" alt="Espacio 5">
+                        </a>
+                    </div>
                 </div>
             </div>
         </div>

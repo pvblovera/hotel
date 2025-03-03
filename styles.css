@@ -95,11 +95,11 @@ a {
 /* INICIO ESTILOS DE MENÚ */
 
 .background-menu {
-    background-color:var(--tertiary-color);
+    background-color: var(--tertiary-color);
     padding: 1rem 0;
 }
 
-.background-menu a{
+.background-menu a {
     color: var(--white-color);
     font-size: 1.4rem;
 }
@@ -108,7 +108,8 @@ a {
     border: none;
     background: transparent;
     font-size: 3rem;
-    color: var(--white-color); /* Color blanco para el icono */
+    color: var(--white-color);
+    /* Color blanco para el icono */
 }
 
 .custom-toggler:focus {
@@ -184,6 +185,7 @@ a {
 .features-section .feature {
     margin-bottom: 3rem;
 }
+
 /* FINAL CARACTERISTICAS */
 
 /* INICIO TABS */
@@ -214,7 +216,7 @@ a {
 .services-tabs .nav-link.active {
     color: var(--white-color);
     background-color: var(--tertiary-color);
-} 
+}
 
 .card-room {
     padding: 2rem;
@@ -247,7 +249,7 @@ a {
 
 .container-contact i {
     color: var(--primary-color);
-} 
+}
 
 /* FINAL ESTILOS CONTACTO */
 
@@ -273,6 +275,7 @@ a {
     transition: ease-in-out all 0.3s;
     border-radius: 1rem;
 }
+
 /* ESTILOS DE BOTÓN WHATSAPP */
 
 /* INICIO ESTILOS FOOTER  */
@@ -291,10 +294,40 @@ footer li {
 
 /* INICIO ESTILOS GALERÍA */
 
+/* Ajustar la altura de la sección */
 .gallery-section {
-    background-color: var(--primary-color);
-    padding: 5rem 0;
+    background-color: var(--tertiary-color);
+    padding: 10rem 0;
     color: var(--white-color);
+}
+
+/* Ajuste de las imágenes */
+.gallery-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* Tamaño fijo para evitar deformaciones */
+.large {
+    height: 700px;
+    /* Ajusta según sea necesario */
+}
+
+.small {
+    height: 345px;
+    /* Ajusta para mantener la proporción de 2 filas */
+}
+
+/* Responsive: En pantallas pequeñas, apilar imágenes */
+@media (max-width: 768px) {
+    .large {
+        height: 300px;
+    }
+
+    .small {
+        height: 150px;
+    }
 }
 
 
