@@ -12,12 +12,13 @@
     <link rel="stylesheet" href="assets/fontawesome/fontawesome/css/all.min.css">
     <!-- PhotoSwipe CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/photoswipe/5.4.2/photoswipe.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
 <body>
-    <div class="contact-info">
+    <div class="contact-info px-3">
         <div class="container">
-            <div class="contact-banner d-flex justify-content-start align-items-center py-2">
+            <div class="contact-banner d-flex justify-content-between justify-content-md-start align-items-center py-2">
                 <div class="contact-item d-flex align-items-center me-4">
                     <i class="fa-solid fa-phone me-2 fs-5"></i>
                     <span class="fs-5">+56 9 0986 5431</span>
@@ -118,7 +119,8 @@
         <div class="container">
             <h2 class="fw-bold mt-5">Hotelería en Ciudad</h2>
             <p class="mb-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt, ipsum!</p>
-            <div class="row row-cols-1 row-cols-md-3 py-5 g-1">
+            <div class="row row-cols-1 row-cols-md-3 py-5 g-1" data-aos="fade-up"
+                data-aos-anchor-placement="bottom-bottom">
                 <div class="col">
                     <div class="feature px-5 d-flex flex-column align-items-center justify-content-center text-center
                         border-0">
@@ -174,7 +176,7 @@
         <div class="tab-content" id="pills-tabContent">
             <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab"
                 tabindex="0">
-                <div class="features-room">
+                <div class="features-room" data-aos="fade-up" data-aos-anchor-placement="bottom-bottom">
                     <div class=" py-4 caracteristicas-container text-center">
                         <h3>Características de nuestras habitaciones</h3>
                         <p class="mb-4">Todas cuentan con:</p>
@@ -301,12 +303,83 @@
                 </div>
             </div>
             <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab"
-                tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem neque suscipit, quas aliquid
-                eum voluptatem tenetur non accusamus eveniet consequatur impedit nisi dolore, accusantium nemo, aperiam
-                sequi! Aut laudantium porro ipsam esse vel! Dolore distinctio cum praesentium, mollitia nisi, nam fuga
-                earum vel molestiae voluptas possimus veritatis corrupti vero sunt?</div>
+                tabindex="0">
+                <div class="row py-3">
+                    <!-- Desayuno -->
+                    <div class="col-md-4">
+                        <div class="card text-center p-3 py-5 border-0 shadow-sm">
+                            <i class="fas fa-coffee fa-3x text-warning fs-1"></i>
+                            <div class="card-body">
+                                <h5 class="card-title fs-1">Desayuno</h5>
+                                <p class="card-text">Disfruta de un desayuno completo con café, jugos naturales, pan
+                                    recién horneado y opciones saludables para comenzar el día.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Almuerzo -->
+                    <div class="col-md-4">
+                        <div class="card text-center p-3 py-5 border-0 shadow-sm">
+                            <i class="fas fa-utensils fa-3x text-danger fs-1"></i>
+                            <div class="card-body">
+                                <h5 class="card-title fs-1">Almuerzo</h5>
+                                <p class="card-text">Disfruta de platos tradicionales y opciones internacionales
+                                    preparadas con ingredientes frescos y de alta calidad.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Menú Vegetariano -->
+                    <div class="col-md-4">
+                        <div class="card text-center p-3 py-5 border-0 shadow-sm">
+                            <i class="fas fa-leaf fa-3x text-success fs-1"></i>
+                            <div class="card-body">
+                                <h5 class="card-title fs-1">Menú Vegetariano</h5>
+                                <p class="card-text">Opciones frescas y nutritivas para quienes prefieren una
+                                    alimentación basada en vegetales, con platos deliciosos y balanceados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
             <div class="tab-pane fade" id="pills-contact" role="tabpanel" aria-labelledby="pills-contact-tab"
-                tabindex="0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquam, perferendis?</div>
+                tabindex="0">
+                <div class="row py-3">
+                    <!-- Traslados -->
+                    <div class="col-md-4">
+                        <div class="card text-center p-3 py-5 border-0 shadow-sm">
+                            <i class="fas fa-shuttle-van fa-3x text-primary fs-1"></i>
+                            <div class="card-body">
+                                <h5 class="card-title fs-1">Traslados</h5>
+                                <p class="card-text">Servicio de transporte privado y traslados al aeropuerto para tu
+                                    comodidad.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spa & Wellness -->
+                    <div class="col-md-4">
+                        <div class="card text-center p-3 py-5 border-0 shadow-sm">
+                            <i class="fas fa-spa fa-3x text-success fs-1"></i>
+                            <div class="card-body">
+                                <h5 class="card-title fs-1">Spa & Wellness</h5>
+                                <p class="card-text">Disfruta de masajes, sauna y gimnasio para una experiencia de
+                                    relajación completa.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Excursiones -->
+                    <div class="col-md-4">
+                        <div class="card text-center p-3 py-5 border-0 shadow-sm">
+                            <i class="fas fa-hiking fa-3x text-warning fs-1"></i>
+                            <div class="card-body">
+                                <h5 class="card-title fs-1">Excursiones</h5>
+                                <p class="card-text">Explora la naturaleza con nuestras actividades al aire libre y
+                                    recorridos guiados.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </main>
 
@@ -354,10 +427,8 @@
         </div>
     </section>
 
-
-
     <section id="map" class="mapView container py-5">
-        <div class="container">
+        <div class="container py-5">
             <h2>Nuestra ubicación</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem provident tempora modi minima suscipit
                 amet?</p>
@@ -459,6 +530,10 @@
     </script>
 
     <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
