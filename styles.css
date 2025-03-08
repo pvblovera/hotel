@@ -94,6 +94,17 @@ a {
 
 /* INICIO ESTILOS DE MENÚ */
 
+.contact-info {
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    padding: 1rem 0;
+    text-align: center;
+}
+
+.contact-info span {
+    color: white;
+}
+
 .background-menu {
     background-color: var(--tertiary-color);
     padding: 1rem 0;
