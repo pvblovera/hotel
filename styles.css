@@ -1,7 +1,7 @@
 :root {
-    --primary-color: #7A918D;
-    --secondary-color: #FCF7F8;
-    --tertiary-color: #A31621;
+    --primary-color:#621B00;
+    --secondary-color: #F9EBE0;
+    --tertiary-color: #2F1000;
     --white-color: #fff;
     --black-color: #000;
 }
@@ -115,6 +115,10 @@ a {
 .custom-toggler:focus {
     outline: none;
     box-shadow: none;
+}
+
+.navbar-brand img {
+    width: 9rem;
 }
 
 /* FINAL ESTILOS DE MENÚ */
@@ -309,7 +313,7 @@ footer li {
 /* Ajustar la altura de la sección */
 .gallery-section {
     background-color: rgb(25, 25, 25);
-    padding: 10rem 0;
+    padding: 5rem 0;
     color: var(--white-color);
 }
 

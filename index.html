@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#A31621" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2F1000" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#284b63" media="(prefers-color-scheme: dark)">
     <title>Page</title>
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
@@ -18,7 +18,9 @@
     <header class="background-menu sticky-top shadow">
         <div class="container">
             <nav class="navbar navbar-expand-lg">
-                <a class="navbar-brand fw-bold fs-1" href="index.html">LOGO</a>
+                <a class="navbar-brand fw-bold fs-1" href="index.html">
+                    <img src="assets/images/logo.png" alt="logotipo">
+                </a>
                 <button class="navbar-toggler custom-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                     aria-label="Toggle navigation">
@@ -31,6 +33,9 @@
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#services">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#gallery">Galería</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#map">Contacto</a>
@@ -57,7 +62,7 @@
             <div class="carousel-item active">
                 <img class="image-custom" src="assets/images/hotel.jpg" class="d-block w-100" alt="...">
                 <div class="overlay-image"></div>
-                <div class="carousel-caption  d-md-block">
+                <div class="carousel-caption  d-md-block mb-5">
                     <h1>Hotelería en Calama</h1>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
@@ -65,7 +70,7 @@
             <div class="carousel-item">
                 <img class="image-custom" src="assets/images/hotel2.jpg" class="d-block w-100" alt="...">
                 <div class="overlay-image"></div>
-                <div class="carousel-caption  d-md-block">
+                <div class="carousel-caption  d-md-block mb-5">
                     <h2>Second slide label</h2>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
@@ -73,7 +78,7 @@
             <div class="carousel-item">
                 <img class="image-custom" src="assets/images/hotel3.jpg" class="d-block w-100" alt="...">
                 <div class="overlay-image"></div>
-                <div class="carousel-caption  d-md-block">
+                <div class="carousel-caption  d-md-block mb-5">
                     <h2>Third slide label</h2>
                     <p>Some representative placeholder content for the first slide.</p>
                 </div>
@@ -153,8 +158,8 @@
                 tabindex="0">
                 <div class="features-room">
                     <div class=" py-4 caracteristicas-container text-center">
-                        <h3>Características</h3>
-                        <p class="mb-4">Todas nuestras habitaciones cuentan con:</p>
+                        <h3>Características de nuestras habitaciones</h3>
+                        <p class="mb-4">Todas cuentan con:</p>
                         <div class="features-room pt-3 d-md-flex justify-content-center">
                             <p class="me-5 d-flex align-items-center justify-content-center feature-room mb-3">
                                 <i class="fa-solid me-3 fa-wifi fs-2"></i>
@@ -187,7 +192,7 @@
                                     <img src="assets/images/single.png" alt="Habitación Simple"
                                         class="img-fluid rounded-3 mb-3">
                                 </div>
-                                <p>1 Persona</p>
+                                <h5 class="mt-4 fs-3">Habitación de 1 Persona</h5>
                                 <!-- <div class="features-room pt-3">
                                     <p class="me-5 d-flex align-items-center feature-room mb-3">
                                         <i class="fa-solid me-3 fa-wifi fs-2"></i>
@@ -220,8 +225,8 @@
                                     <img src="assets/images/matri.webp" alt="Habitación Simple"
                                         class="img-fluid rounded-3 mb-3">
                                 </div>
-                                <p>2 Personas</p>
-                                <div class="features-room pt-3">
+                                <h5 class="mt-4 fs-3">Habitación de 2 Personas</h5>
+                                <!-- <div class="features-room pt-3">
                                     <p class="me-5 d-flex align-items-center feature-room mb-3">
                                         <i class="fa-solid me-3 fa-wifi fs-2"></i>
                                         <span class="fw-bold fs-4">Wi-Fi</span>
@@ -238,7 +243,7 @@
                                         <i class="fa-solid me-3 fa-tv fs-2"></i>
                                         <span class="fw-bold fs-4">Televisión con Cable</span>
                                     </p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -253,8 +258,8 @@
                                     <img src="assets/images/ejecutivo.jpg" alt="Habitación Simple"
                                         class="img-fluid rounded-3 mb-3">
                                 </div>
-                                <p>Para 1 Persona</p>
-                                <div class="features-room pt-3">
+                                <h5 class="mt-4 fs-3">Habitación de 1-2 Personas</h5>
+                                <!-- <div class="features-room pt-3">
                                     <p class="me-5 d-flex align-items-center feature-room mb-3">
                                         <i class="fa-solid me-3 fa-wifi fs-2"></i>
                                         <span class="fw-bold fs-4">Wi-Fi</span>
@@ -271,7 +276,7 @@
                                         <i class="fa-solid me-3 fa-tv fs-2"></i>
                                         <span class="fw-bold fs-4">Televisión con Cable</span>
                                     </p>
-                                </div>
+                                </div> -->
                             </div>
                         </div>
                     </div>
@@ -290,7 +295,7 @@
     <section class="gallery-section">
         <div class="container">
             <h2 class="text-center mb-4">Conoce Nuestros Espacios</h2>
-            <p class="text-center mb-4">Explora nuestra galería y descubre cada rincón.</p>
+            <p class="text-center mb-5">Explora nuestra galería y descubre cada rincón.</p>
 
             <div id="gallery" class="row g-2 align-items-stretch">
                 <!-- Imagen grande a la izquierda -->
